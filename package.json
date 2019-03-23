@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "./node_modules/.bin/mocha",
+    "fmt": "./node_modules/prettier/bin-prettier.js \"{lib,test}/**/*.js\" --write"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chai": "^4.2.0",
     "mocha": "^6.0.2"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
   }
 }
